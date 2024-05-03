@@ -9,8 +9,16 @@
         Background="Transparent"
         AllowsTransparency="True"
         WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
         >
-    <Border Background="White" CornerRadius="10">
+    <Border Background="White" CornerRadius="10" Margin="10
+">
+        
+
+        <Border.Effect>
+            <DropShadowEffect ShadowDepth="3" Color="Black" Opacity="0.5" BlurRadius="10" Direction="5"/>
+        </Border.Effect>
+        
         <Grid>
 
             <!--<Grid.ColumnDefinitions>

@@ -31,10 +31,9 @@ public partial class Conexao : Window
                 {
                     conn.Open();
 
-                    MessageBox.Show("Sucesso!");
                     stringConnection = edt_connectionString.Text;
-                    Menu m = new();
-                    m.Show();
+                    SqlEditor editor = new();
+                    editor.Show();
                     this.Hide();
                 }
             }
