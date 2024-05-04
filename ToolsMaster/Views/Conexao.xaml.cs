@@ -8,7 +8,7 @@ namespace ToolsMaster.Views;
 /// </summary>
 public partial class Conexao : Window
 {
-    internal string stringConnection { get; set; }
+    public string stringConnection { get; set; }
     private static Conexao _instance = null;
     public Conexao()
     {
@@ -32,9 +32,8 @@ public partial class Conexao : Window
                     conn.Open();
 
                     stringConnection = edt_connectionString.Text;
-                    SqlEditor editor = new();
-                    editor.Show();
-                    this.Hide();
+                    this.DialogResult = true;
+                    this.Close();
                 }
             }
             else

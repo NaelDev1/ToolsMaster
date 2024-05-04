@@ -14,19 +14,18 @@ public partial class SqlEditor : Window
 {
     StackPanel stack = new();
     StackPanel stackWheres = new();
-    public List<string> bancoDados { get; set; }
-    public List<string> tipoOperacao { get; set; }
-    public List<string> tipo { get; set; }
+    public List<string>? bancoDados { get; set; }
+    public List<string>? tipoOperacao { get; set; }
+    public List<string>? tipo { get; set; }
 
-    string connectionString = null;
+    string? connectionString = null;
 
-    public Conexao conexao = Conexao.Instance();
 
-    public SqlEditor()
+    public SqlEditor(string? connectionString)
     {
 
         InitializeComponent();
-        connectionString = conexao.stringConnection;
+        this.connectionString = connectionString;
 
         CarregarTabelas();
 

@@ -42,13 +42,21 @@
 
             <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
 
-                <Border Cursor="Hand" BorderBrush="Black" BorderThickness="1" Background="Black" CornerRadius="20" Padding="0" Width="70" Height="70" Margin="20" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+                <Border Cursor="Hand" BorderBrush="Black" BorderThickness="1" Background="Black" CornerRadius="20" Padding="0" Width="70" Height="70" Margin="20" MouseLeftButtonDown="PanelSqlEditor_Click">
                     <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="12" FontStretch="Condensed" Margin="0" Padding="0">Sql Editor</TextBlock>
                 </Border>
 
 
-                <Border Cursor="Hand" BorderBrush="Black" BorderThickness="1" Background="Black" CornerRadius="20" Padding="0" Width="70" Height="70" Margin="20" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+                <Border Cursor="Hand" BorderBrush="Black" BorderThickness="1" Background="Black" CornerRadius="20" Padding="0" Width="70" Height="70" Margin="20" MouseLeftButtonDown="PanelSqlEditor_Click">
                     <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="12" FontStretch="Condensed" Margin="0" Padding="0">Conversor</TextBlock>
+                </Border>
+
+                <Border Cursor="Hand" BorderBrush="Black" BorderThickness="1" Background="Black" CornerRadius="20" Padding="0" Width="70" Height="70" Margin="20" MouseLeftButtonDown="PanelModelGenerator_Click">
+                    <TextBlock TextWrapping="Wrap"  HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="12" FontStretch="Condensed" Margin="0" Padding="0">Model Banco</TextBlock>
+                </Border>
+
+                <Border Cursor="Hand" BorderBrush="Black" BorderThickness="1" Background="Black" CornerRadius="20" Padding="0" Width="70" Height="70" Margin="20">
+                    <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="12" FontStretch="Condensed" Margin="0" Padding="0">Model Inversor</TextBlock>
                 </Border>
 
 
