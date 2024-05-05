@@ -72,4 +72,12 @@ public partial class Menu : Window
         m.Show();
 
     }
+
+    private void TextBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+    {
+
+        Inversor i = new();
+        i.Show();
+
+    }
 }
