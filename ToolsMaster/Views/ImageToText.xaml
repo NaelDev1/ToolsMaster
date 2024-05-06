@@ -1,0 +1,63 @@
+﻿<Window x:Class="ToolsMaster.Views.ImageToText"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToolsMaster.Views"
+        mc:Ignorable="d"
+        Title="ImageToText" Height="450" Width="800"           Background="Transparent"
+   AllowsTransparency="true"
+   WindowStyle="None"
+   WindowStartupLocation="CenterScreen"
+   
+   >
+    <Border Background="White" CornerRadius="20" Margin="10">
+
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="20" Color="Black" ShadowDepth="5" Opacity="0.5" Direction="3"/>
+        </Border.Effect>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="90*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label
+HorizontalAlignment="Center"
+Foreground="Gray"
+FontSize="30"
+FontFamily="Segoi UI"
+FontWeight="Bold"
+           Grid.Row="0"
+           Grid.ColumnSpan="2"
+>ToolsMaster</Label>
+            <!--Tratando o primeiro painel -->
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Border  Margin="5,0,10,5" Grid.Row="0" Grid.Column="0">
+                    <Image Name="edt_image"></Image>
+                </Border>
+                <Button Grid.Row="1"  Click="Button_Click">Ler</Button>
+
+            </Grid>
+
+            <Border CornerRadius="5" Margin="5,0,10,5" Grid.Row="1" Grid.Column="1">
+                <RichTextBox Name="edt_resultado" Margin="5" Background="Black" Foreground="White"></RichTextBox>
+            </Border>
+
+        </Grid>
+
+
+
+
+
+    </Border>
+</Window>

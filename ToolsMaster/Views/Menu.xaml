@@ -60,7 +60,9 @@
                 </Border>
 
 
-
+                <Border Cursor="Hand" BorderBrush="Black" BorderThickness="1" Background="Black" CornerRadius="20" Padding="0" Width="70" Height="70" Margin="20">
+                    <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" TextAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="12" FontStretch="Condensed" Margin="0" Padding="0" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_1">Image Para Texto</TextBlock>
+                </Border>
 
 
             </StackPanel>

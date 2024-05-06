@@ -38,7 +38,13 @@ public partial class Inversor : Window
 
                 if (valores.Length == 2)
                 {
-                    Run run = new Run($"{valores[1].Trim()} = {valores[0].Trim()}");
+                    Run run = new Run(@$"{(valores[1].Trim().Contains(".ToString()")
+                        ? valores[1].Trim().Replace(".ToString()", "")
+                        : valores[1].Trim().Contains("int.Parse(")
+                        ? valores[1].Trim().Replace("int.Parse(", "").Replace(")","")
+                        : valores[1].Trim().Contains("bool.Parse(")
+                        ? valores[1].Trim().Replace("bool.Parse(", "").Replace(")", "")
+                        : valores[1].Trim())} = {(valores[1].Trim().EndsWith(".ToString()") ? ($"{valores[0].Trim()}.ToString()") : valores[0].Trim())}");
                     span.Inlines.Add(run);
                     span.Inlines.Add(new LineBreak());
                 }
