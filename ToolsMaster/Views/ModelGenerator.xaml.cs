@@ -108,15 +108,17 @@ public partial class ModelGenerator : Window
             
             span.Inlines.Add(runPublic);
 
+            Run runTipo = new Run($"   {tipo[i].tipo}   ");
+            runTipo.Foreground = Brushes.DarkOrange;
+            span.Inlines.Add(runTipo);
+
 
             Run runNomeColuna = new Run($"   {tipo[i].coluna}  ");
             runNomeColuna.Foreground = Brushes.White;
             span.Inlines.Add(runNomeColuna);
 
 
-            Run runTipo = new Run($"   {tipo[i].tipo}   ");
-            runTipo.Foreground = Brushes.DarkOrange;
-            span.Inlines.Add(runTipo);
+           
 
             Run runChave = new Run(" { ");
             runChave.Foreground = Brushes.White;
@@ -126,7 +128,7 @@ public partial class ModelGenerator : Window
             runGetSet.Foreground = Brushes.CornflowerBlue;
             span.Inlines.Add(runGetSet);
 
-            Run runGetSet2 = new Run(" get; ");
+            Run runGetSet2 = new Run(" set; ");
             runGetSet2.Foreground = Brushes.CornflowerBlue;
             span.Inlines.Add(runGetSet2);
 
